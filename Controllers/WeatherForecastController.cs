@@ -18,6 +18,10 @@ namespace MyDotnetProject.Controllers
             _logger = logger;
         }
 
+        /// <summary>
+        /// Get Weather forecast data
+        /// </summary>
+        /// <returns></returns>
         [HttpGet(Name = "GetWeatherForecast")]
         public IEnumerable<WeatherForecast> Get()
         {
